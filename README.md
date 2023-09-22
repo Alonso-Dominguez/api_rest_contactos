@@ -18,3 +18,11 @@ Para este ejemplo se utlizara el gestor de bases de datos [SQLite3](https://sqli
 ```sql
 X=CREATE TABLE...
 ```
+CREATE TABLE IF NOT EXISTS contactos (
+    id_contacto        INT PRIMARY KEY NOT NULL,
+    nombre             VARCHAR(100) NOT NULL,
+    primer_apellido    VARCHAR(50) NOT NULL,
+    segundo_apellido   VARCHAR(50) NOT NULL,
+    telefono           VARCHAR(20) NOT NULL,
+    correo_electronico VARCHAR(50) NOT NULL
+);
