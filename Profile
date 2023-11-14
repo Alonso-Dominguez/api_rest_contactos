@@ -1,1 +1,0 @@
-web: guvicorn -k uvicorn.workers.UvicornWoker main:app
