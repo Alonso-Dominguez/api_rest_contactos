@@ -119,3 +119,7 @@ async def buscar_contactos_por_email(email: str):
     except Exception as e:
         print(f'Error al buscar contactos por email: {e}')
         raise HTTPException(status_code=500, detail="Error al buscar contactos por email")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
