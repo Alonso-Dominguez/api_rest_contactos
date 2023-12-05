@@ -6,6 +6,10 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import sqlite3 
 
+
+
+
+
 app = FastAPI()
 
 templates = Jinja2Templates(directory="static")
